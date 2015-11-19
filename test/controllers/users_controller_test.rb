@@ -65,6 +65,6 @@ class UsersControllerTest < ActionController::TestCase
 
   test "should redirect followers when not logged in" do
     get :followers, id: @user
-    assert_redirect_to login_url
+    assert_redirected_to login_url
   end
 end
